@@ -1,0 +1,33 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body {
+width: 100%;
+height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    /* perspective: 1000px; By using perspective you can see the change in angle of the image , jitna value km rkhoge utna jyada tilt dikhega */
+    background: #000000;
+}
+
+#box{
+    height: 400px;
+    width: 400px;
+    /* background-color: lightcoral; */
+    background-image: url(https://images.unsplash.com/photo-1620993208551-ec648b0468bb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1035);
+    background-size: cover;
+    background-position: center;
+    /* transform: rotateX(45deg); */
+    /* transform: rotateX(90deg); */
+    /* transform: rotateX(180deg); */
+    transform: rotateY(40deg);
+    /* transform: scale(1); DEFAULT SIZE
+    transform: scale(2); DOUBLE SIZE and so on... */
+}
